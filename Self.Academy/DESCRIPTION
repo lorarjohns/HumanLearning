@@ -1,0 +1,18 @@
+Package: Self.Academy
+Title: Building Open Source Knowledge
+Version: 0.0.1
+Maintainer: Lora Johns <lora.r.johns@gmail.com>
+Description:  Ongoing education in mathematics, data science, and related fields of academic endeavor
+Author: Lora Johns
+Depends: R (>= 3.3.1)
+Imports:
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+License: Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/lorarjohns/Self.Academy
+BugReports: https://github.com/lorarjohns/Self.Academy/issues
