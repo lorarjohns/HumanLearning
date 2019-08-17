@@ -37,3 +37,15 @@ plot_sample_data <- function(data, size, iters){
 }
 
 samps_3 <- plot_sample_data(ames, 50, 3)
+
+plot_many_samples <- function(data, size, reps) {
+  sample_means <- ames %>%
+    rep_sample_n(size = size, reps = reps, replace = TRUE) %>%
+    summarise(x_bar = mean(area))
+  
+  print(ggplot(data = sample_means, aes(x = x_bar)) +
+    geom_histogram(binwidth = 20))
+  return(sample_means)
+}
+
+samps_50 <- plot_many_samples(ames, 50, 15000)
