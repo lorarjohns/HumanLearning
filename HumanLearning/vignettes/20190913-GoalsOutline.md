@@ -96,13 +96,15 @@
 	5. [Test-Driven Development with Python, 2nd Edition](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/)
 	6. [Test-Driven Python Development](https://learning.oreilly.com/library/view/test-driven-python-development/9781783987924/)
 	7. [Python Testing with Pytest](https://learning.oreilly.com/library/view/python-testing-with/9781680502848/)
-
+	
+	8. [Git-It and other git resources](https://try.github.io)
+	
 3. Databases
 	
 4. Mathematics
 
 	1. [MIT Math for Computer Science (problems and exams with solutions)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/download-course-materials/), [(version with Leighton lecture videos)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/)
-	2. [my curriculum]()
+	2. [my curriculum](/MathCourse.md)
 	
 5. Algorithms
 
