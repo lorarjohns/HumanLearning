@@ -49,3 +49,20 @@ plot_many_samples <- function(data, size, reps) {
 }
 
 samps_50 <- plot_many_samples(ames, 50, 15000)
+
+calc_binwidth <- function(data, size, feature) {
+  binwidth <- data %>%
+    summarise(bw = sd(feature)*( 1/(size^(1/3)))) %>%
+    summarise(mean(bw)*3.49)
+  return(binwidth[[1]])
+}
+
+plot_distrib <- function(data, size, reps, feature) {
+  sample_means <- data %>%
+    rep_sample_n(size=size, reps=reps, replace=TRUE)
+  binwidth <- data %>%
+    calc_binwidth(size, feature)
+  p <- ggplot(sample_means, aes(x=feature)) +
+    geom_histogram(binwidth = binwidth)
+  print(p)
+}

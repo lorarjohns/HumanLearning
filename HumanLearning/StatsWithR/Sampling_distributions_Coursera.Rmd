@@ -201,6 +201,12 @@ Note that for each of the 15,000 times we computed a mean, we did so from a
 </div>
 ```{r practice-sampling-dist}
 # type your code for the Exercise here, and Run Document
+sample_means_small <- ames %>% 
+  rep_sample_n(size = 10, reps = 25, replace = TRUE) %>%
+                    summarise(x_bar = mean(area))
+
+ggplot(data = sample_means_small, aes(x = x_bar)) +
+  geom_histogram(binwidth = 20)
 
 ```
 
@@ -342,6 +348,11 @@ shinyApp(
 ```{r price-sample}
 # type your code for this Exercise here, and Run Document
 
+samp <- ames %>%
+  sample_n(size = 50) %>%
+  summarise(x_bar = mean(price))
+
+samp$x_bar
 ```
 
 <div id="exercise">
@@ -350,6 +361,31 @@ shinyApp(
 ```{r price-sampling}
 # type your code for this Exercise here, and Run Document
 
+plot_distrib <- function(data, size, reps, feature) {
+  sample_means <- data %>%
+    rep_sample_n(size=size, reps=reps, replace=TRUE)
+  binwidth <- sample_means %>%
+    calc_binwidth(size, feature)
+  p <- ggplot(sample_means, aes(x=feature)) +
+    geom_histogram(binwidth = binwidth)
+  print(p)
+}
+
+sample_means50 <- ames %>%
+  rep_sample_n(size = 50, reps = 5000, replace = TRUE)
+binwidth <- sample_means50 %>%
+  summarise(bw = sd(price)*( 1/(5000^(1/3)))) %>%
+  summarise(mean(bw)*3.49)
+ggplot(sample_means50, aes(x=price)) +
+  geom_histogram(binwidth = binwidth[[1]])
+```
+```{r}
+calc_binwidth <- function(data, size, feature) {
+  binwidth <- data %>%
+  summarise(bw = sd(feature)*( 1/(size^(1/3)))) %>%
+  summarise(mean(bw)*3.49)
+  return(binwidth[[1]])
+}
 ```
 
 <div id="exercise">
@@ -357,7 +393,13 @@ shinyApp(
 </div>
 ```{r price-sampling-more}
 # type your code for this Exercise here, and Run Document
-
+sample_means150 <- ames %>%
+  rep_sample_n(size = 150, reps = 5000, replace = TRUE)
+binwidth <- sample_means150 %>%
+  summarise(bw = sd(price)*( 1/(5000^(1/3)))) %>%
+  summarise(mean(bw)*3.49)
+ggplot(sample_means150, aes(x=price)) +
+  geom_histogram(binwidth = binwidth[[1]])
 ```
 
 * * *
@@ -374,7 +416,9 @@ summary statistics. You are welcomed to use the app for exploration.
 </div>
 ```{r price-sample-small}
 # type your code for this Exercise here, and Run Document
-
+sample_mean <- ames %>%
+  sample_n(size = 15, replace = TRUE) %>%
+  summarise(mean_price = mean(price))
 ```
 
 <div id="exercise">
@@ -382,6 +426,7 @@ summary statistics. You are welcomed to use the app for exploration.
 </div>
 ```{r price-sampling-small}
 # type your code for this Exercise here, and Run Document
+
 
 ```
 
