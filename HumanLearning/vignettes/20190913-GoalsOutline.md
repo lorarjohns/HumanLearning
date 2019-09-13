@@ -104,7 +104,7 @@
 4. Mathematics
 
 	1. [MIT Math for Computer Science (problems and exams with solutions)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/download-course-materials/), [(version with Leighton lecture videos)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/)
-	2. [my curriculum](/MathCourse.md)
+	2. [my curriculum](../MathCourse.md)
 	
 5. Algorithms
 
