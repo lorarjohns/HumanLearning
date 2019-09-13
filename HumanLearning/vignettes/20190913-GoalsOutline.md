@@ -15,7 +15,7 @@
 - Mathematics: 4
 - Machine Learning: 1
 	- PyTorch-Deep Learning: 1
-- Linguistics: 8
+- NLP & Linguistics: 8
 
 ****
 
@@ -26,6 +26,7 @@
 	1. Build and deploy a working project with Pytorch
 	2. Work through _Machine Learning: A Probabilistic Perspective_
 	3. Complete the DataCamp Machine Learning course track
+	4. Work through [An Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/information-retrieval-book.html) (see also: NLP)
 
 2. Production Python
 
@@ -62,12 +63,12 @@
 	3. Complete a machine learning project
 	4. Complete a data visualization project
 
-8. Linguistics
+8. NLP with Linguistics
 
-	1. Work through semantics textbook
+	1. Work through [An Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/information-retrieval-book.html)
 	2. Complete lambda calculus refresher exercises
 	3. Create math, linguistics, & AI research agenda (for possible collaboration on course/podcast)
-	4. Review generative syntax book and trees in LaTeX
+	4. Review formal semantics book, generative syntax book and trees in LaTeX
 
 ****
 
@@ -100,11 +101,13 @@
 	8. [Git-It and other git resources](https://try.github.io)
 	
 3. Databases
+
+	-- update in progress --
 	
 4. Mathematics
 
 	1. [MIT Math for Computer Science (problems and exams with solutions)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/download-course-materials/), [(version with Leighton lecture videos)](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/)
-	2. [my curriculum](../MathCourse.md)
+	2. [my curriculum](https://github.com/lorarjohns/HumanLearning/blob/master/HumanLearning/vignettes/MathCourse.md)
 	
 5. Algorithms
 
@@ -121,6 +124,10 @@
 	2. [DataCamp R courses](https://www.datacamp.com/tracks/data-scientist-with-r)
 	3. [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday)
 	
-8. Linguistics
+8. NLP & Linguistics
 
-
+	1. [An Introduction to Information Retrieval](https://nlp.stanford.edu/IR-book/information-retrieval-book.html)
+	2. [forall x](http://forallx.openlogicproject.org/) with [proof checker](http://proofs.openlogicproject.org/)
+	3. [Lambda Calculator](https://github.com/nyusemantics/LambdaCalculator/wiki/Documentation)
+	4. [Heim & Kratzer, Semantics in Generative Grammar](http://users.uoa.gr/~wlechner/Creteling2017/Textbooks/Heim%20and%20Kratzer%201998.pdf)
+	5. [Semantics Bootcamp](http://eecoppock.info/semantics-boot-camp.pdf)
