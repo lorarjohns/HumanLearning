@@ -102,7 +102,7 @@
 	 2. [Docker Documentation](https://docker-curriculum.com/#introduction)
 	 3. [Docker-Compose Codealong](https://medium.com/applied-data-science/the-full-stack-data-scientist-part-2-a-practical-introduction-to-docker-1ea932c89b57)
 	 
-	 4. [Hands-On Test Driven Development with Python](Hands-On Test Driven Development with Python)
+	 4. [Hands-On Test Driven Development with Python](https://learning.oreilly.com/videos/hands-on-test-driven/9781789138313)
 	 5. [Test-Driven Development with Python, 2nd Edition](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/)
 	 6. [Test-Driven Python Development](https://learning.oreilly.com/library/view/test-driven-python-development/9781783987924/)
 	 7. [Python Testing with Pytest](https://learning.oreilly.com/library/view/python-testing-with/9781680502848/)
