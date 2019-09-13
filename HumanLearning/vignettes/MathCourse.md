@@ -1,1 +1,1 @@
--- Update in progress --
+Currently on local machine only, update in progress
